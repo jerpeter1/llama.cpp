@@ -312,8 +312,8 @@ endif
 ifneq ($(filter aarch64%,$(UNAME_M)),)
 	# Apple M1, M2, etc.
 	# Raspberry Pi 3, 4, Zero 2 (64-bit)
-	MK_CFLAGS   += -mcpu=native
-	MK_CXXFLAGS += -mcpu=native
+	MK_CFLAGS   +=
+	MK_CXXFLAGS +=
 endif
 
 ifneq ($(filter armv6%,$(UNAME_M)),)
